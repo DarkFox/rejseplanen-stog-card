@@ -1,5 +1,5 @@
 # rejseplanen-stog-card
-Lovelace card for listing departures from Rejseplanen sensors
+Lovelace card for listing departures from Rejseplanen sensors, in the style of S-Tog departure boards.
 
 This works with the [Rejseplanen sensor](https://www.home-assistant.io/components/rejseplanen/) included in Home Assistant.
 
