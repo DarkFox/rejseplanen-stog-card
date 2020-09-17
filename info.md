@@ -5,7 +5,7 @@ This works with the [Rejseplanen sensor](https://www.home-assistant.io/component
 
 I've tried to add as many styles for different transit types and routes as I could find, but please let me know if any are missing.
 
-![Example](https://raw.githubusercontent.com/DarkFox/rejseplanen-stog-card/master/rejseplanen-stog-card-example.png)
+![Example](https://raw.githubusercontent.com/DarkFox/rejseplanen-stog-card/main/rejseplanen-stog-card-example.png)
 
 ## Credits
 
