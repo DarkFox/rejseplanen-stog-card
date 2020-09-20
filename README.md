@@ -21,8 +21,8 @@ Link `rejseplanen-stog-card` inside your configuration:
 
 ```yaml
 resources:
-  - url: /hacsfiles/rejseplanen-stog-card/rejseplanen-stog-card.js
-    type: js
+  url: /hacsfiles/rejseplanen-stog-card/rejseplanen-stog-card.js
+  type: js
 ```
 
 ## Manual installation
