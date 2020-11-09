@@ -4,6 +4,7 @@ class RejseplanenStogCard extends HTMLElement {
     const entityId = this.config.entity;
     const max_entries = this.config.max_entries;
     const state = hass.states[entityId];
+    const show_scheduled_time = this.config.show_scheduled_time;
 
     if (state === undefined) {
       this.innerHTML = `
@@ -203,6 +204,7 @@ class RejseplanenStogCard extends HTMLElement {
         'type': state.attributes['type'],
         'due_in': state.attributes['due_in'],
         'direction': state.attributes['direction'],
+        'scheduled_at': state.attributes['scheduled_at'],
         'track': state.attributes['track'],
         'real_time_at': state.attributes['real_time_at'],
       };
@@ -220,9 +222,15 @@ class RejseplanenStogCard extends HTMLElement {
       const direction = journey['direction'];
       const routename = journey['route'];
       const type = journey['type'];
-      const time = journey['due_in'];
+      let time = journey['due_in'];
+      var min = "<span> min</<span>"
       const track = journey['track'];
       const realTimeAt = journey['real_time_at'];
+      
+      if (show_scheduled_time) {
+        time = journey['scheduled_at'].split(' ')[1]
+        min = ""
+      }
 
       const styleType = type.replace(' ', '-');
       const styleRoutename = routename.replace(' ', '-');
@@ -240,7 +248,7 @@ class RejseplanenStogCard extends HTMLElement {
 
       tablehtml += `
           <tr>
-            <td class="shrink time">${time}<span> min</span></td>
+            <td class="shrink time">${time}${min}</td>
             <td class="expand direction">
               <span class="route type-${styleType} route-${styleRoutename}">${routename}</span>
               ${direction}
