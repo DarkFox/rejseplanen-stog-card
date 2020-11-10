@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.5.0]
+### Added
+- Add option to show time of departure instead of due in - by @DurgNomis-drol (#2)
+
 ## [1.4.1]
 ### Fixed
 - Switch to iife minimizer to avoid class name clashing.
