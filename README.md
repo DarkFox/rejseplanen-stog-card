@@ -52,11 +52,13 @@ resources:
 
 Add a custom element in your `ui-lovelace.yaml`
 
-|         Name        |  Type   |    Default   |     Supported options     | Description |
-| ------------------- | ------- | ------------ | ------------------------- | ----------- |
+|         Name        |  Type   |    Default   |       Supported options        | Description |
+| ------------------- | ------- | ------------ | ------------------------------ | ----------- |
 | type                | string  | **Required** | `custom:rejseplanen-stog-card` | Type of the card |
-| entity              | string  | **Required** | `sensor.rejseplanen`      | entity_id |
-| max_entries         | number  | optional     | any number                | Limit number of departures shown |
+| entity              | string  | **Required** | `sensor.rejseplanen`           | entity_id |
+| max_entries         | number  | optional     | any number                     | Limit number of departures shown |
+| show_scheduled_time | boolean | `false`      | `true`|`false`                 | Show the scheduled departure time instead of a countdown in minutes |
+
 
 
 **Example:**
