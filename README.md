@@ -1,3 +1,6 @@
+# PROJECT ARCHIVED
+Due to the defunct state of the HA Rejseplanen integration, this project has been archived.
+
 # rejseplanen-stog-card
 Lovelace card for listing departures from Rejseplanen sensors, in the style of S-Tog departure boards.
 
